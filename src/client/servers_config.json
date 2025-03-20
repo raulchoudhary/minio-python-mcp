@@ -1,0 +1,22 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "/Users/username/Desktop",
+        "/Users/username/Downloads"
+      ]
+    },
+    "minio_service": {
+      "command": "/Users/username/.local/bin/uv",
+      "args": [
+                "--directory",
+                "/Users/username/PycharmProjects/minio-mcp/src/minio_mcp_server",
+                "run",
+                "server.py"
+            ]
+    }
+  }
+}

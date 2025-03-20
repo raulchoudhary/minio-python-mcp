@@ -1,0 +1,1 @@
+"""MinIO MCP server resources package."""

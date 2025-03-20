@@ -1,0 +1,5 @@
+minio>=7.2.0
+python-dotenv>=1.0.0
+pydantic>=2.5.2
+hypercorn>=0.15.0
+mcp>=1.0.0

@@ -1,0 +1,24 @@
+[project]
+name = "minio_mcp_server"
+version = "0.1.0"
+description = "Model-Context Protocol (MCP) server and client for MinIO"
+
+
+[[project.authors]]
+name = "Nikita Makarov"
+email = "nima0713@gmail.com"
+
+dependencies = [
+    "minio>=7.2.0",
+    "mcp>=1.3.0",
+    "python-dotenv>=1.0.0",
+    "pydantic>=2.5.2",
+    "hypercorn>=0.15.0"
+]
+
+[build-system]
+requires = [ "hatchling",]
+build-backend = "hatchling.build"
+
+[project.scripts]
+minio_service = "minio_service:main"
